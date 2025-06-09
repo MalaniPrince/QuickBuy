@@ -9,4 +9,8 @@
 
     <string name="lorem_ipsum">hello world
     </string>
+    <string name="Title_OnBoarding">Quick Buy</string>
+    <string name="Title_Onborading_Descripiton">"Welcome to \nQuickBuy"</string>
+    <string name="Title_Onborading_SubDescripiton">"Buy and Sell Stock Easliy "</string>
+    <string name="Get_Started">Get Started</string>
 </resources>

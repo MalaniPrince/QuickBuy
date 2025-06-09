@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OnBoardingActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image_onboarding"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="36dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/Title_Onboarding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_56"
+        android:layout_marginStart="@dimen/margin_32"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginHorizontal="@dimen/margin_96"
+        android:text="@string/Title_OnBoarding"
+        android:textAlignment="center"
+        android:textSize="@dimen/font_40"
+        android:textStyle="bold"
+        android:textColor="@color/white">
+
+    </androidx.appcompat.widget.AppCompatTextView>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/Title_Descripition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_410"
+      android:layout_marginEnd="@dimen/margin_20"
+        app:layout_constraintTop_toBottomOf="@+id/Title_Onboarding"
+        android:layout_marginHorizontal="@dimen/margin_96"
+        android:text="@string/Title_Onborading_Descripiton"
+        android:textAlignment="center"
+        android:textSize="@dimen/font_36"
+        android:textStyle="bold"
+        android:textColor="@color/white">
+
+    </androidx.appcompat.widget.AppCompatTextView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/Title_SubDescripition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_4"
+        android:layout_marginStart="@dimen/margin_2"
+        app:layout_constraintTop_toBottomOf="@+id/Title_Descripition"
+        android:layout_marginHorizontal="@dimen/margin_96"
+        android:text="@string/Title_Onborading_SubDescripiton"
+        android:textAlignment="center"
+        android:textSize="@dimen/font_24"
+        android:textStyle="bold"
+        android:textColor="@color/white">
+
+    </androidx.appcompat.widget.AppCompatTextView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Onboarding_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_56"
+        android:layout_marginHorizontal="@dimen/margin_64"
+        app:layout_constraintTop_toBottomOf="@+id/Title_SubDescripition"
+        android:background="@color/color_ButtonColor"
+        android:text="@string/Get_Started"
+        android:textSize="@dimen/font_24"
+        android:textColor="@color/white">
+    </androidx.appcompat.widget.AppCompatButton>
+</androidx.constraintlayout.widget.ConstraintLayout>
