@@ -13,4 +13,17 @@
     <string name="Title_Onborading_Descripiton">"Welcome to \nQuickBuy"</string>
     <string name="Title_Onborading_SubDescripiton">"Buy and Sell Stock Easliy "</string>
     <string name="Get_Started">Get Started</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="str_Login">Login</string>
+    <string name="Enter_Your_Email">Enter Your Email And Password</string>
+    <string name="Email">Email</string>
+    <string name="Password">Password</string>
+    <string name="dont_have_account">Don\'t Have An Account?</string>
+    <string name="Sign_up">SignUp</string>
+    <string name="str_Create_Acc">Create An Account</string>
+    <string name="str_start_trading">Join us and start trading Today!</string>
+    <string name="str_full_name">Full Name</string>
+    <string name="str_Com_Password">Confirm Password</string>
+    <string name="str_Already_Acc">Already Have An Account\?</string>
+
 </resources>

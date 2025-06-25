@@ -1,14 +1,12 @@
-package com.example.quickbuy
+package com.example.quickbuy.ui.base
 
 import android.content.Intent
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.quickbuy.databinding.ActivityOnBoardingBinding
+import com.example.quickbuy.ui.home.HomeMainActivity
+import com.example.quickbuy.ui.login.LoginActivity
 
 class OnBoardingActivity : AppCompatActivity() {
 
@@ -16,10 +14,10 @@ class OnBoardingActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-      binding = ActivityOnBoardingBinding.inflate(layoutInflater)
+        binding = ActivityOnBoardingBinding.inflate(layoutInflater)
         setContentView(binding.root)
-       binding.OnboardingButton.setOnClickListener {
-           startActivity(Intent(this,MainActivity::class.java))
-       }
+        binding.OnboardingButton.setOnClickListener {
+            startActivity(Intent(this, LoginActivity::class.java))
+        }
     }
 }

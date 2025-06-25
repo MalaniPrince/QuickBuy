@@ -1,4 +1,4 @@
-package com.example.quickbuy
+package com.example.quickbuy.ui.home
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,11 +6,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.example.quickbuy.databinding.FragmentSecondBinding
+import com.example.quickbuy.R
+import com.example.quickbuy.databinding.FragmentFirstBinding
 
-class SecondFragment : Fragment() {
+class FirstFragment : Fragment() {
 
-    private var _binding: FragmentSecondBinding? = null
+    private var _binding: FragmentFirstBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -18,18 +19,18 @@ class SecondFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
 
-        _binding = FragmentSecondBinding.inflate(inflater, container, false)
+        _binding = FragmentFirstBinding.inflate(inflater, container, false)
         return binding.root
 
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val textForDisplay = arguments?.getString("data").toString()
-        binding.textviewSecond.text = textForDisplay
 
-        binding.buttonSecond.setOnClickListener {
-            findNavController().navigate(R.id.FirstFragment)
+        binding.buttonFirst.setOnClickListener {
+            val bundle = Bundle()
+            bundle.putString("data", "second fragment")
+            findNavController().navigate(R.id.SecondFragment, bundle)
         }
     }
 
